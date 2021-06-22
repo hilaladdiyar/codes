@@ -5,8 +5,8 @@
  * @return mixed
  */
 function j_filter_yoast_breadcrumb_single_link_output( $link, $breadcrumb ){
-
-	  if ( strpos( $link, 'breadcrumb_last' ) !== false ) {
+	 
+    if ( strpos( $link, 'breadcrumb_last' ) !== false ) {
         $link = str_replace( '</li>', '', $link );
         $link = str_replace( 'span', 'li', $link );
     }else{
